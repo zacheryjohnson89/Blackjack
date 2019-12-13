@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./blackjack.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+        <div id="setup" class="setupContainer">
+
+            <img src="./png/back_cards-07.png" alt="No Image">
+
+            <h1 class="blinking">BLACKJACK</h1>
+
+            <form>
+
+                <input type="text" placeholder="Your Name" class="get-name"><br>
+                <input type="number" placeholder="Number of Decks" min="1" max="10" class="get-decks"><br>
+                <input type="number" placeholder="Wallet Amount $" min="1" max="99999" class="set-wallet"><br>
+                
+                <button type="button" class="start-btn">Start Game</button>
+
+            </form>
+
+        </div>
+
+        <div class="left-container">
+
+            <button type="button" class="new-btn">New Game</button>
+
+            <input type="checkbox" name="show-card" value="yes" checked class="card-count-checkbox"><br>
+            
+            <h1 class="card-count-label">
+                Card <br> Counter
+            </h1>
+            <h2 id="card-count">%value%</h2>
+
+            <h1 class="wallet-label">Wallet</h1>
+            <h2 id="wallet">%value%</h2>
+
+        </div>
+
+        <div class="center-container">
+
+            <p>Dealer</p>
+
+            <div class="player-container dealer" id="dealer">
+
+
+            </div>
+
+            <div class="pot-container">
+
+                <input type="text" placeholder="Place Bet $" id="bet-input">
+
+                <p id="you-win">You Win!</p>
+                <p id="you-lose">You Lose!</p>
+                <p id="push">Push</p>
+                <p id="bust">Bust</p>
+                <p id="bet">%betValue%</p>
+
+            </div>
+
+            <div class="player-container player" id="player">
+
+
+            </div>
+
+            <p id="name">Player</p>
+
+            <button type="button" class="deal-btn">Deal</button>
+
+            <button type="button" class="hit-btn">Hit</button>
+
+            <button type="button" class="hold-btn">Hold</button>
+
+        </div>
+
+    </div>
+
+    <a href="../../projects.html"><button type="button" class="hold-btn">Back to Website</button></a> 
+    
+</body>
+
+<script src="./blackjack.js"></script>
+
+</html>
